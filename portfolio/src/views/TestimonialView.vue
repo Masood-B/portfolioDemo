@@ -1,23 +1,53 @@
 <template>
     <div class="testimonial" id="testimonial">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-4" v-for="(content, index) in skillContent" :key="content.title">
-            <div class="card mb-3" v-if="index >= currentIndex && index < currentIndex + visibleItems">
-              <div class="card-img-container" @click="toggleWords(content)">
-                <img :src="content.picture" class="card-img" :alt="content.title" />
-                <div class="words" v-if="content.showWords">
-                  <p>{{ content.description }}</p>
+      <div class="container">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <div class="row justify-content-center p-2">
+          <div class="col-lg-10">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item"
+                  v-for="(data, index) in testimonial"
+                  :key="index"
+                  :class="{ active: index === 0 }"
+                >
+                  <div class="card animate__animated animate__flipInY animate__delay-1s">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img :src="data.image" class="img-fluid rounded-start img-fit" alt="..." loading="lazy" style="height:38rem">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ data.name }}</h5>
+                          <p class="card-text">{{ data.statement }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">{{ content.title }}</h5>
-              </div>
+              <a
+                class="carousel-control-prev"
+                href="#testimonialCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#testimonialCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
             </div>
           </div>
         </div>
-        <button @click="prev" v-if="currentIndex > 0">Previous</button>
-        <button @click="next" v-if="currentIndex + visibleItems < skillContent.length">Next</button>
       </div>
     </div>
   </template>
@@ -26,64 +56,44 @@
   export default {
     data() {
       return {
-        skillContent: [
+        testimonial: [
           {
-            picture: "https://i.postimg.cc/xdjQYvb5/icons8-html5-100.png",
-            title: "HTML5",
-            description: "Hypertext Markup Language, the standard markup language for documents designed to be displayed in a web browser.",
-            showWords: false, // Initially, words are hidden
+            name: "Codi Kader",
+            image: "https://i.postimg.cc/7h0yrP5d/Codi-Kader-pfp.jpg",
+            statement: "Masood Basardien, He is a very determined, passionate and kind young man. He is going to do great things in the IT sector. You can count on that. Masood strives his best to make sure that all his deadlines & work is done as soon as possible and correctly as possible. He works really well in a group or alone. He is able to adapt in any environment he is placed in. Once you get to know him you feel a sense of belonging as he is able to welcome you in with a warm and kind atmosphere. This is a great addition to any workplace or business."
           },
-          // ... (other skills)
+          {
+            name: "Mogammad Imtiyaaz Damon",
+            image:"https://i.postimg.cc/pLDM6LwF/Mogammad-Damon-pfp.jpg",
+            statement:"Masood is a kind person with a great sense of humour. He is a great friend and he is very intelligent."
+          },
+          {
+            name: "Uzukhanye Dywili",
+            image:"https://i.postimg.cc/hvDWNMzZ/C11-Uzukhanye-Dywili-4.jpg",
+            statement:"Working with Masood Basardien was an incredible experience. Their professionalism, attention to detail, and communication skills made the entire process seamless. They consistently exceeded my expectations and delivered exceptional results. I would highly recommend Masood Basardien to anyone looking for a talented and dedicated professional."
+          },
+          {
+            name: "Taflynne Summer Petersen",
+            image:"https://i.postimg.cc/W4yPWMSj/Taflynne-Summer-Petersen-pfp.jpg",
+            statement:"Masood Basardien is a good person to work with, he thinks for himself and asks for help when needed only. He is good at putting two and two together, works well in a group setting and is very helpful. He is an asset to any company or field he pursues."
+          },
+          {
+            name: "Eighton Lee Paulse",
+            image:"https://i.postimg.cc/4NSDd9gt/Eighton-Lee-Paulse-pfp.jpg",
+            statement:"Masood Basardien is a very positive individual. He often tries his best to help with work and does his part in everything the way he needs to do. He is very reliable and friendly and works well in groups. My experience working with him was great. I would definitely recommend him."
+          },
+          {
+            name: "Joel Mukanya",
+            image:"https://i.postimg.cc/HnybG6gL/Joel-Profile.jpg",
+            statement:"Masood is very well-behaved, social, and dedicated; he enjoys working with his peers and works well on his project. He learned HTML, CSS, Bootstrap, and VueJS. He will learn more in the coming months."
+          }
         ],
-        currentIndex: 0,
-        visibleItems: 4, // Number of visible items in the carousel
       };
-    },
-    methods: {
-      toggleWords(content) {
-        content.showWords = !content.showWords; // Toggle the visibility
-      },
-      prev() {
-        if (this.currentIndex > 0) {
-          this.currentIndex -= 1;
-        }
-      },
-      next() {
-        if (this.currentIndex + this.visibleItems < this.skillContent.length) {
-          this.currentIndex += 1;
-        }
-      },
     },
   };
   </script>
   
-  <style scoped>
-  .card-img-container {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .card-img {
-    transition: transform 0.5s;
-  }
-  
-  .words {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    display: none;
-  }
-  
-  .card-img-container:hover .card-img {
-    transform: scale(1.1);
-  }
-  
-  .card-img-container:hover .words {
-    display: block;
-  }
+  <style>
+  /* Add custom CSS styles here if needed */
   </style>
   
