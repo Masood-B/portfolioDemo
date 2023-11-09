@@ -37,29 +37,29 @@ img[alt="Logo"]{
   }
 
 .home{
-background: grey;
+
 min-height: 90vh;
   }
   .self-pic{
     width: 20rem;
   }
 .about{
-    background: crimson;
+   
     min-height: 100vh;
     }
 .resume{
-  background: grey;
+  
   min-height:100vh;
 }
 .project{
-  background: crimson;
+ 
     min-height: 100vh;
 }
 .testimonial{
-  background: grey;
+ 
   min-height:100vh;
 }
 .contact{
-  background: crimson;
+
     min-height: 100vh;
 }

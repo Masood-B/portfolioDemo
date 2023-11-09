@@ -1,25 +1,29 @@
 <template>
-    <div class="testimonial" id="testimonial">
-      <div class="container">
-        <h2 class="text-center mb-4">Testimonials</h2>
-        <div class="row justify-content-center p-2">
-          <div class="col-lg-10">
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div
-                  class="carousel-item"
-                  v-for="(data, index) in testimonial"
-                  :key="index"
-                  :class="{ active: index === 0 }"
-                >
-                  <div class="card animate__animated animate__flipInY animate__delay-1s">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img :src="data.image" class="img-fluid rounded-start img-fit" alt="..." loading="lazy" style="height:38rem">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
+  <div class="testimonial" id="testimonial">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonials</h2>
+      <div class="row justify-content-center p-2">
+        <div class="col-lg-10">
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div
+                class="carousel-item"
+                v-for="(data, index) in testimonial"
+                :key="index"
+                :class="{ active: index === 0 }"
+              >
+                <div class="card animate__animated animate__flipInY animate__delay-1s">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img :src="data.image" class="img-fluid rounded-start img-fit" alt="..." loading="lazy">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <div class="top">
                           <h5 class="card-title">{{ data.name }}</h5>
+                          <h5 class="card-title">{{ data.title }}</h5>
+                        </div>
+                        <div class="body-statement">
                           <p class="card-text">{{ data.statement }}</p>
                         </div>
                       </div>
@@ -27,73 +31,94 @@
                   </div>
                 </div>
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#testimonialCarousel"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#testimonialCarousel"
-                role="button"
-                data-bs-slide="next"
-              >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
             </div>
+            <a
+              class="carousel-control-prev"
+              href="#testimonialCarousel"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#testimonialCarousel"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        testimonial: [
-          {
-            name: "Codi Kader",
-            image: "https://i.postimg.cc/7h0yrP5d/Codi-Kader-pfp.jpg",
-            statement: "Masood Basardien, He is a very determined, passionate and kind young man. He is going to do great things in the IT sector. You can count on that. Masood strives his best to make sure that all his deadlines & work is done as soon as possible and correctly as possible. He works really well in a group or alone. He is able to adapt in any environment he is placed in. Once you get to know him you feel a sense of belonging as he is able to welcome you in with a warm and kind atmosphere. This is a great addition to any workplace or business."
-          },
-          {
-            name: "Mogammad Imtiyaaz Damon",
-            image:"https://i.postimg.cc/pLDM6LwF/Mogammad-Damon-pfp.jpg",
-            statement:"Masood is a kind person with a great sense of humour. He is a great friend and he is very intelligent."
-          },
-          {
-            name: "Uzukhanye Dywili",
-            image:"https://i.postimg.cc/hvDWNMzZ/C11-Uzukhanye-Dywili-4.jpg",
-            statement:"Working with Masood Basardien was an incredible experience. Their professionalism, attention to detail, and communication skills made the entire process seamless. They consistently exceeded my expectations and delivered exceptional results. I would highly recommend Masood Basardien to anyone looking for a talented and dedicated professional."
-          },
-          {
-            name: "Taflynne Summer Petersen",
-            image:"https://i.postimg.cc/W4yPWMSj/Taflynne-Summer-Petersen-pfp.jpg",
-            statement:"Masood Basardien is a good person to work with, he thinks for himself and asks for help when needed only. He is good at putting two and two together, works well in a group setting and is very helpful. He is an asset to any company or field he pursues."
-          },
-          {
-            name: "Eighton Lee Paulse",
-            image:"https://i.postimg.cc/4NSDd9gt/Eighton-Lee-Paulse-pfp.jpg",
-            statement:"Masood Basardien is a very positive individual. He often tries his best to help with work and does his part in everything the way he needs to do. He is very reliable and friendly and works well in groups. My experience working with him was great. I would definitely recommend him."
-          },
-          {
-            name: "Joel Mukanya",
-            image:"https://i.postimg.cc/HnybG6gL/Joel-Profile.jpg",
-            statement:"Masood is very well-behaved, social, and dedicated; he enjoys working with his peers and works well on his project. He learned HTML, CSS, Bootstrap, and VueJS. He will learn more in the coming months."
-          }
-        ],
-      };
-    },
-  };
-  </script>
-  
-  <style>
-  /* Add custom CSS styles here if needed */
-  </style>
-  
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      testimonial: [
+        {
+          name: "Codi Kader",
+          image: "https://i.postimg.cc/qqjP45xQ/Codi-Kader-pfp-fotor-20231109104431.png",
+          statement: "His unwavering determination and passion make him a standout talent in the IT sector. Masood consistently meets deadlines with precision and excels both in collaborative team settings and when working independently. His adaptable nature ensures success in any work environment, and his warm and welcoming demeanor fosters a sense of inclusivity, making him a truly invaluable addition to any workplace or business.",
+        },
+        {
+          name: "Uzukhanye Dywili",
+          image: "https://i.postimg.cc/tg6GWD9C/C11-Uzukhanye-Dywili-4-fotor-202311091140.png",
+          statement: "I had the privilege of working with Masood Basardien, and it was a truly remarkable experience. His unwavering professionalism, meticulous attention to detail, and excellent communication skills ensured a seamless and highly productive collaboration. Masood consistently exceeded my expectations, consistently delivering exceptional results. I wholeheartedly endorse Masood Basardien for anyone in search of a talented and dedicated professional.",
+        },
+        {
+          name: "Taflynne Summer Petersen",
+          image: "https://i.postimg.cc/gkGtJqMR/Taflynne-Summer-Petersen-pfp-fotor-2023110911951.png",
+          statement: "Masood demonstrates an exceptional ability to think independently, seeking assistance when necessary. His adeptness at connecting ideas, collaborative skills, and readiness to assist others make him a valuable addition to any organization or industry he chooses to engage with.",
+        },
+        {
+          name: "Eighton Lee Paulse",
+          image: "https://i.postimg.cc/bN0Sw1Z7/Eighton-Lee-Paulse-pfp-fotor-20231109104542.png",
+          statement: "Masood Basardien is an exceptionally positive and dependable individual. His proactive approach to work, unwavering commitment to fulfilling his responsibilities, and strong reliability make him a valuable asset in any team. Masood's friendly disposition and effectiveness in group dynamics ensure a smooth collaborative experience. It was a pleasure working with him, and I wholeheartedly recommend his professional services.",
+        },
+        {
+          name: "Joel Mukanya",
+          image: "https://i.postimg.cc/SRhTcWkB/Joel-Profile-fotor-20231109103938.png",
+          statement: "Masood is a highly disciplined, sociable, and dedicated professional who thrives in both collaborative and independent work environments. He has successfully acquired proficiency in a range of web development technologies, including HTML, CSS, Bootstrap, JavaScript, MySQL, and VueJS, and his commitment to continuous learning promises further growth in the months ahead.",
+        }
+      ],
+    };
+  },
+};
+</script>
+
+<style>
+.testimonial {
+  /* Set a base font size that will be adjusted using viewport units */
+  font-size: 1.5vw;
+}
+
+/* Define media queries for different screen sizes */
+@media (max-width: 768px) {
+  .testimonial {
+    /* Adjust font size for smaller screens */
+    font-size: 2vw;
+  }
+  .img-fit {
+    max-width: 80%; /* Adjust the image size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial {
+    /* Further adjust font size for even smaller screens */
+    font-size: 3vw;
+  }
+  .img-fit {
+    max-width: 60%; /* Further adjust the image size for even smaller screens */
+  }
+}
+
+/* Add your other CSS styles here */
+</style>
