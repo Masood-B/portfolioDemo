@@ -26,6 +26,11 @@
   <div>
     <ContactView/>
   </div>
+  <footer class="footer mt-5">
+    <div class="container text-center">
+      <p>CopyRight &copy; {{ cYear }} Masood Basardien</p>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -41,6 +46,11 @@ export default {
     ProjectView,
     TestimonialView,
     ContactView
+  },
+  data() {
+    return {
+      cYear: new Date().getUTCFullYear(),
+    };
   }
 }
 </script>
@@ -87,5 +97,12 @@ export default {
   .home button {
     font-size: 1rem;
   }
+}
+
+.footer {
+  background-color: #242b33;
+  padding: 5px 0;
+  bottom: 0;
+  width: 100%;
 }
 </style>
