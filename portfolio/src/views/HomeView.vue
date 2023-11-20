@@ -1,31 +1,34 @@
 <template>
   <div class="home" id="home">
     <div class="content">
-      <img class="self-pic" alt="myself" src="https://i.postimg.cc/bNfHQM6v/frontimage-1-removebg.png">
+      <div class="image-container">
+        <img class="self-pic" alt="myself" src="https://i.postimg.cc/bNfHQM6v/frontimage-1-removebg.png">
+        <div class="image-overlay"></div>
+      </div>
       <div class="text-content">
         <h2>Hello, I'm Masood Basardien</h2>
         <h2>An Aspiring Full-stack Web Developer</h2>
         <div>
-          <button><a href="#about">About Me</a></button>
+          <button><a href="#about" class="aboutButton">About Me</a></button>
         </div>
       </div>
     </div>
   </div>
-  <div>
+  <section>
     <AboutView/>
-  </div>
-  <div>
+  </section>
+  <section>
     <ResumeView/>
-  </div>
-  <div>
+  </section>
+  <section>
     <ProjectView/>
-  </div>
-  <div>
+  </section>
+  <section>
     <TestimonialView/>
-  </div>
-  <div>
+  </section>
+  <section>
     <ContactView/>
-  </div>
+  </section>
   <footer class="footer mt-5">
     <div class="container text-center">
       <p>CopyRight &copy; {{ cYear }} Masood Basardien</p>
@@ -56,7 +59,6 @@ export default {
 </script>
 
 <style>
-
 .content {
   display: flex;
   justify-content: center;
@@ -69,14 +71,44 @@ export default {
 }
 
 .self-pic {
-  max-width: 100%;
-  margin-right: 20px; 
+  min-width: 30%;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 
-@media (max-width: 769px) {
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.image-overlay {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 90%;
+  height: 80%;
+  background-color: #2d3d64b9;
+  z-index: 0; 
+  transform: skewY(-5deg);
+}
+
+@media (max-width: 768px) {
   .self-pic {
-    display: none;
+    display: none !important;
+  }
+
+  .image-overlay {
+    display: none ;
   }
 }
 
@@ -105,4 +137,5 @@ export default {
   bottom: 0;
   width: 100%;
 }
+
 </style>

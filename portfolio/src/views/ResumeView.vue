@@ -15,7 +15,7 @@
         <section>
           <h2>Skills</h2>
           <div class="row">
-            <div class="col-md-3" v-for="content in skillContent" :key="content.title">
+            <div class="col-md-2" v-for="content in skillContent" :key="content.title">
               <div class="card mb-3 skillcard">
                 <img :src="content.picture" class="card-img-top" alt="{{ content.title }}">
                 <div class="card-body">

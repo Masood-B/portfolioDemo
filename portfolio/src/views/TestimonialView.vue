@@ -95,30 +95,26 @@ export default {
 
 <style>
 .testimonial {
-  /* Set a base font size that will be adjusted using viewport units */
   font-size: 1.5vw;
 }
 
-/* Define media queries for different screen sizes */
+
 @media (max-width: 768px) {
   .testimonial {
-    /* Adjust font size for smaller screens */
     font-size: 2vw;
   }
   .img-fit {
-    max-width: 80%; /* Adjust the image size for smaller screens */
+    max-width: 80%; 
   }
 }
 
 @media (max-width: 576px) {
   .testimonial {
-    /* Further adjust font size for even smaller screens */
     font-size: 3vw;
   }
   .img-fit {
-    max-width: 60%; /* Further adjust the image size for even smaller screens */
+    max-width: 60%; 
   }
 }
 
-/* Add your other CSS styles here */
 </style>

@@ -1,27 +1,26 @@
 <template>
-    <div class="project" id="project">
-        
-            <div class="container">
-                <h2>Project</h2>
-              <div class="row">
-                <div class="col-md-4" v-for="content in skillContent" :key="content.title">
-                  <div class="card mb-3">
-                    <div class="card-img-container">
-                      <img :src="content.picture" class="card-img" alt="{{ content.title }}">
-                      <div class="overlay">
-                        <div class="text"><button>RED</button></div>
-                        <div class="text"><button>BLUE</button></div>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">{{ content.title }}</h5>
-                    </div>
-                  </div>
-                </div>
+  <div class="project" id="project">
+    <div class="container">
+      <h2>Project</h2>
+      <div class="row">
+        <div class="col-md-3 mx-auto" v-for="content in skillContent" :key="content.title">
+          <div class="card mb-3">
+            <div class="card-img-container">
+              <img :src="content.picture" class="card-img" alt="{{ content.title }}">
+              <div class="overlay">
+                <div class="text"><button>RED</button></div>
+                <div class="text"><button>BLUE</button></div>
               </div>
             </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ content.title }}</h5>
             </div>
-          </template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
           
           <script>
           export default {
