@@ -1,8 +1,8 @@
-<template>
+<template>  
   <div class="home" id="home">
     <div class="content">
       <div class="image-container">
-        <img class="self-pic" alt="myself" src="https://i.postimg.cc/bNfHQM6v/frontimage-1-removebg.png">
+        <img class="self-pic" alt="myself" src="https://i.ibb.co/fGSzy6h/frontimage-1-removebg.png"  border="0" loading="lazy"/>
         <div class="image-overlay"></div>
       </div>
       <div class="text-content">

@@ -14,7 +14,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto"> <!-- Center the navbar links -->
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
@@ -57,4 +57,5 @@ export default {
 .nav-link:hover{
   color: brown
 }
+
 </style>

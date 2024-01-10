@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <section>
+          <section data-aos="fade-right">
             <h2>About Me</h2>
             <p>
               I am a 21-year-old individual residing in Mitchell's Plain, having attended Meadowridge Primary School and Spine Road High School during my formative years. I pursued a three-year education at the Cape Peninsula University of Technology, although I did not complete my degree. Today, I am actively pursuing a childhood dream to exert a significant influence in the world of gaming, aiming to make a lasting impact.
@@ -14,7 +14,7 @@
           </section>
         </div>
         <div class="col-md-6">
-          <section>
+          <section data-aos="fade-left">
             <h2>Hobbies</h2>
             <div class="row">
               <div v-for="content in hobbyContent" :key="content.title" class="col-md-6">
@@ -98,5 +98,11 @@ h3, p, li {
   border-radius: 50%;
   margin-right: 10px;
   background-color: #000000; /* You can change the background color as needed */
+}
+.about{
+padding-top: 5rem;
+}
+h2{
+  padding-bottom:2rem;
 }
 </style>

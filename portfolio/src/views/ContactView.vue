@@ -7,7 +7,7 @@
             </div>
             <div class="col-12 col-md-6 mb-4">
               <img
-                src="https://i.postimg.cc/2y2rFq47/anime-wallpaper-7628310-1280.webp"
+                src="https://w0.peakpx.com/wallpaper/626/191/HD-wallpaper-canvas-paint-texture-spots-embossed-blue.jpg"
                 class="img-fluid"
                 alt=""
               />
@@ -78,7 +78,11 @@
           };
           </script>
           
-          <style>
-         
-          </style>
-          
+<style>
+.contact{
+  padding-top: 5rem;
+}  
+h2{
+  padding-bottom: 2rem;
+}     
+</style>  

@@ -3,7 +3,7 @@
       <div class="container">
         <section>
           <h2>Education</h2>
-          <div class="card cardd" v-for="content in educationContent" :key="content.year">
+          <div class="card cardd" v-for="content in educationContent" :key="content.year"  data-aos="fade-up">
             <img src="" alt="">
             <h4>{{ content.year }}</h4>
             <div class="card-body">
@@ -13,7 +13,7 @@
         </section>
   
         <section>
-          <h2>Skills</h2>
+          <h2 class="skill-top">Skills</h2>
           <div class="row">
             <div class="col-md-2" v-for="content in skillContent" :key="content.title">
               <div class="card mb-3 skillcard">
@@ -49,27 +49,27 @@
         ],
         skillContent: [
           {
-            picture: "https://i.postimg.cc/gcxkPjVK/icons8-html-480.png",
+            picture: "https://i.ibb.co/mhjXc48/icons8-html-480.png",
             title: "HTML5"
           },
           {
-            picture: "https://i.postimg.cc/SRnKTNrD/icons8-css-480.png",
+            picture: "https://i.ibb.co/0hT4N41/icons8-css-480.png",
             title: "CSS3"
           },
           {
-            picture: "https://i.postimg.cc/d32NLfby/icons8-bootstrap-144.png",
+            picture: "https://i.ibb.co/wpc2V5N/icons8-bootstrap-480.png",
             title: "Bootstrap"
           },
           {
-            picture: "https://i.postimg.cc/NjMbcLjT/icons8-javascript-144.png",
+            picture: "https://i.ibb.co/sJy7W6J/icons8-javascript-480.png",
             title: "JavaScript"
           },
           {
-            picture: "https://i.postimg.cc/V6zWwQ9B/icons8-vue-js-240.png",
+            picture: "https://i.ibb.co/nR9jFbn/icons8-mysql-480.png",
             title: "Vue.js"
           },
           {
-            picture: "https://i.postimg.cc/3w8qkJZS/icons8-mysql-480.png",
+            picture: "https://i.ibb.co/ZTHTmPg/icons8-vue-js-480.png",
             title: "MySQL"
           }
         ]
@@ -79,18 +79,17 @@
   </script>
   
   <style scoped>
-    /* Add any additional styling here */
     section {
       margin-bottom: 2em;
     }
   
     .cardd {
-      margin: 5px 0;
+      margin: 50px 0;
       border-radius: 20px;
-      padding: 5px;
+      padding: 2px;
       width: 50%;
       border: 2px solid black;
-      background: orange;
+      background: rgb(71, 70, 67);
     }
   
     .cardd:nth-child(odd) {
@@ -117,12 +116,26 @@
       .cardd:nth-child(odd),
       .cardd:nth-child(even) {
         margin-left: 0;
+    
       }
   
       .cardd:nth-child(odd)::after,
       .cardd:nth-child(even)::after {
         content: none;
       }
+    }
+    .resume{
+      padding-top: 5rem;
+    }
+    h2{
+      padding-bottom: 2rem;
+    }
+    .skill-top{
+      padding-top: 2rem;
+    }
+
+    .skillcard{
+      background:rgb(71, 70, 67);
     }
   </style>
   
