@@ -123,4 +123,5 @@ export default {
 .carousel-inner{
   margin-top: 5rem;
 }
+
 </style>

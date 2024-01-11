@@ -12,11 +12,11 @@
           </div>
         </section>
   
-        <section>
+        <section >
           <h2 class="skill-top">Skills</h2>
           <div class="row">
-            <div class="col-md-2" v-for="content in skillContent" :key="content.title">
-              <div class="card mb-3 skillcard">
+            <div class="col-md-2" v-for="content in skillContent" :key="content.title" >
+              <div class="card mb-3 skillcard" data-aos="flip-down">
                 <img :src="content.picture" class="card-img-top" alt="{{ content.title }}">
                 <div class="card-body">
                   <h3 class="card-title">{{ content.title }}</h3>
@@ -137,5 +137,6 @@
     .skillcard{
       background:rgb(71, 70, 67);
     }
+    
   </style>
   

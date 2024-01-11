@@ -28,27 +28,27 @@
               return {
                 projectContent: [
                   {
-                    picture: "https://mcdn.wallpapersafari.com/medium/47/59/CbeI43.jpg",
+                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
                     title: "1",
                   },
                   {
-                    picture: "https://mcdn.wallpapersafari.com/medium/47/59/CbeI43.jpg",
+                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
                     title: "2",
                   },
                   {
-                    picture: "https://mcdn.wallpapersafari.com/medium/47/59/CbeI43.jpg",
+                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
                     title: "3",
                   },
                   {
-                    picture: "https://mcdn.wallpapersafari.com/medium/47/59/CbeI43.jpg",
+                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
                     title: "4",
                   },
                   {
-                    picture: "https://mcdn.wallpapersafari.com/medium/47/59/CbeI43.jpg",
+                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
                     title: "5",
                   },
                   {
-                    picture: "https://mcdn.wallpapersafari.com/medium/47/59/CbeI43.jpg",
+                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
                     title: "6",
                   },
                 ],
@@ -65,6 +65,7 @@
           
           .card-img {
             transition: transform 0.5s;
+            transition: filter 2s;
           }
           
           .overlay {
@@ -87,7 +88,8 @@
           }
           
           .card-img-container:hover .card-img {
-            transform: scale(1.1);
+           
+            filter:grayscale(100%)
           }
           
           .card-img-container:hover .overlay {

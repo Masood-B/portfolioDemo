@@ -100,7 +100,7 @@ h3, p, li {
   background-color: #000000; /* You can change the background color as needed */
 }
 .about{
-padding-top: 5rem;
+padding-top: 7rem;
 }
 h2{
   padding-bottom:2rem;
