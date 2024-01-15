@@ -1,10 +1,10 @@
+
 <template>
     <div class="resume" id="resume">
       <div class="container">
         <section>
           <h2>Education</h2>
           <div class="card cardd" v-for="content in educationContent" :key="content.year"  data-aos="fade-up">
-            <img src="" alt="">
             <h4>{{ content.year }}</h4>
             <div class="card-body">
               <p>{{ content.description }}</p>
@@ -36,7 +36,7 @@
         educationContent: [
           {
             year: "2023",
-            description: "Studied coding at Life Choice Academy for 6 months"
+            description: "Studied coding at Life Choice Academy for 6 months",
           },
           {
             year: "2020-2022",
@@ -92,7 +92,7 @@
       background: rgb(71, 70, 67);
     }
   
-    .cardd:nth-child(odd) {
+  .cardd:nth-child(odd) {
       box-shadow: 0.5vw 0.2vw 0.7vw;
     }
   
@@ -136,6 +136,9 @@
 
     .skillcard{
       background:rgb(71, 70, 67);
+    }
+    .skillcard img:nth-child(1){
+      animation-delay: 2s;
     }
     
   </style>

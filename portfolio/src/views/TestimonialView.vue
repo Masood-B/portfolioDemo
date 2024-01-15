@@ -4,7 +4,9 @@
       <h2 class="text-center mb-4">Testimonials</h2>
       <div class="row justify-content-center p-2">
         <div class="col-lg-10">
-          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
             <div class="carousel-inner">
               <div
                 class="carousel-item"
