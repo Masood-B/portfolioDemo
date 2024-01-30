@@ -9,7 +9,7 @@
         <h2>Hello, I'm Masood Basardien</h2>
         <h2>An Aspiring Full-stack Web Developer</h2>
         <div>
-          <button><a href="#about" class="aboutButton">About Me</a></button>
+          <a href="#about"><button class="aboutButton">About Me</button></a>
         </div>
       </div>
     </div>
@@ -64,6 +64,38 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh; 
+}
+
+.aboutButton {
+  background-color: #a5aaf9;
+  border-radius: 100px;
+  box-shadow: rgba(14, 200, 233, 0.2) 0 -25px 18px -14px inset,rgba(14, 200, 233, 0.2) 0 8px 16px,rgba(14, 200, 233, 0.2) 0 16px 32px;
+  color: rgb(57, 195, 246);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+a .aboutButton{
+  text-decoration: none;
+  color: black  ;
+}
+a .aboutButton:hover{
+  color: rgb(24, 37, 30) ;
+}
+
+.aboutButton:hover {
+  box-shadow: rgba(1, 242, 247, 0.456) 0 -25px 18px -14px inset,rgba(1, 242, 247, 0.456) 0 1px 2px,rgba(1, 242, 247, 0.456) 0 2px 4px,rgba(1, 242, 247, 0.456) 0 4px 8px,rgba(1, 242, 247, 0.456) 0 8px 16px,rgba(1, 242, 247, 0.456) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  background-color: rgba(17, 214, 201, 0.725);
 }
 
 .centered {

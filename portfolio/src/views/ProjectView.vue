@@ -4,7 +4,7 @@
       <h2>Project</h2>
       <div class="row">
         <div class="col-md-4 mx-auto" v-for="content in projectContent" :key="content.title" data-aos="fade-up"
-        data-aos-duration="3000">
+        data-aos-duration="1000">
           <div class="card mb-3">
             <div class="card-img-container">
               <img :src="content.picture" class="card-img" alt="{{ content.title }}">
@@ -22,12 +22,6 @@
     </div>
   </div>
 </template>
-
-@media (min-width: 768px) {
-  .button {
-    padding: 0.25em 0.75em;
-  }
-}
 
           <script>
           export default {

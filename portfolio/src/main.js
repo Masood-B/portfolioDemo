@@ -5,6 +5,7 @@ import store from './store'
 import './assets/css/style.css'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 AOS.init({

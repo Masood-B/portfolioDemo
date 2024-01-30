@@ -2,17 +2,16 @@
     <div class="contact" id="contact">
         <div class="container">
         <div class="row">
-            <div class="col-12">
               <h2>Contact Us</h2>
+            <div class="col-md-6">
+              <div class="detail">
+                <p class="contact-detail"><strong><i class="bi bi-envelope"></i>:</strong>  masoodbasardien123@gmail.com </p>
+                <p class="contact-detail"><strong><i class="bi bi-telephone-fill"></i>:</strong> 079 298 0631 </p>
+                <p class="contact-detail"><strong><i class="bi bi-geo-alt"></i>:</strong> 14 Chapel Road, Cape Town, 7785 </p>
+              </div>
             </div>
-            <div class="col-12 col-md-6 mb-4">
-              <img
-                src="https://w0.peakpx.com/wallpaper/626/191/HD-wallpaper-canvas-paint-texture-spots-embossed-blue.jpg"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-            <div class="col-12 col-md-6">
+            <!--  -->
+            <div class="col-md-6">
               <form
                 action="https://formspree.io/f/xbjewvba"
                 class="w-100"
@@ -86,4 +85,20 @@ h2{
   padding-bottom: 2rem;
 }     
 
+.col{
+  border: 1px solid red;
+}
+.detail{
+  color: black;
+  font-size: 1.5rem;
+}
+.contact-detail{
+  padding-top: 2rem;
+}
+@media (max-width: 991.5px) {
+  .contact-detail{
+    color:rgb(90, 90, 105);
+    font-size: 1.2rem;
+  }
+}
 </style>  
