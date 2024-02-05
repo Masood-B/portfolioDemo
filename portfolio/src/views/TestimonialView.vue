@@ -16,7 +16,7 @@
               >
                 <div class="card animate__animated animate__flipInY animate__delay-1s">
                   <div class="row g-0">
-                    <div class="col-md-4">
+                    <div class="col-md-4 img-box">
                       <img :src="data.image" class="img-fluid rounded-start img-fit" alt="..." loading="lazy">
                     </div>
                     <div class="col-md-8">
@@ -41,8 +41,9 @@
               data-bs-slide="prev"
             >
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+             
             </a>
+            <!-- <span class="visually-hidden">Previous</span> -->
             <a
               class="carousel-control-next"
               href="#testimonialCarousel"
@@ -50,8 +51,9 @@
               data-bs-slide="next"
             >
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+        
             </a>
+            <!-- <span class="visually-hidden">Next</span> -->
           </div>
         </div>
       </div>
@@ -125,5 +127,22 @@ export default {
 .carousel-inner{
   margin-top: 5rem;
 }
+.carousel-control-next{
+  width:2rem !important;
+}
+.carousel-control-next-icon{
+ background-image: none !important;
+
+}
+
+.carousel-control-prev{
+  width:2rem !important;
+}
+.carousel-control-prev-icon{
+  background-image: none !important;
+ }
+ .body-statement{
+  margin:0  5rem
+ }
 
 </style>

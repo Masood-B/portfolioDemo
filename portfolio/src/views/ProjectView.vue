@@ -128,6 +128,11 @@
           }
           .project{
             padding-top: 5rem;
+            background-image: url(https://i.ibb.co/h8YDfhd/wallpaperflare-com-wallpaper-3.jpg);
+            background-size:100vw 100vh;
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
           }
           h2{
             padding-bottom: 2rem;
@@ -140,6 +145,10 @@
             .overlay button {
               padding: 0.25em 0.75em;
             }
+          }
+
+          .col-md-4{
+            width: 21rem;
           }
           </style>
           

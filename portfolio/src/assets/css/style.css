@@ -21,8 +21,7 @@ img[alt="Logo"]{
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    background: linear-gradient(to right bottom, #415382 50%, #2d3d64 50%);
-    
+    background: radial-gradient(circle at 10% 20%, rgba(37,14,57,255) 0%, rgba(5,37,96,255) 72.4%);
     /* background: linear-gradient(to right bottom, #8225a1 50%, #580f66 50%); */
   }
   

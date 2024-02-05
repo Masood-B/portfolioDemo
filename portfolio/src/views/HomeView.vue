@@ -2,10 +2,12 @@
   <div class="home" id="home">
     <div class="content">
       <div class="image-container">
-        <img class="self-pic" alt="myself" src="https://i.ibb.co/fGSzy6h/frontimage-1-removebg.png"  border="0" loading="lazy"/>
+        <img class="self-pic" alt="myself" src="https://i.ibb.co/fGSzy6h/frontimage-1-removebg.png"  border="0" loading="lazy" />
         <div class="image-overlay"></div>
       </div>
-      <div class="text-content">
+      <div class="text-content" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <h2>Hello, I'm Masood Basardien</h2>
         <h2>An Aspiring Full-stack Web Developer</h2>
         <div>

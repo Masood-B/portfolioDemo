@@ -15,7 +15,7 @@
         <section >
           <h2 class="skill-top">Skills</h2>
           <div class="row">
-            <div class="col-md-2" v-for="content in skillContent" :key="content.title" >
+            <div class="col-md-4 mx-auto scard" v-for="content in skillContent" :key="content.title" >
               <div class="card mb-3 skillcard" data-aos="flip-down">
                 <img :src="content.picture" class="card-img-top" alt="{{ content.title }}">
                 <div class="card-body">
@@ -141,5 +141,8 @@
       animation-delay: 2s;
     }
     
+    .scard{
+      width:15rem
+    }
   </style>
   
