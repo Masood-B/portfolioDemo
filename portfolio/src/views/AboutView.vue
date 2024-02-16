@@ -91,4 +91,7 @@ section p{
     color:rgb(199, 191, 209);
     font-size: 1.1rem;
 }
+.contact-detail{
+  word-break: break-word;
+}
 </style>

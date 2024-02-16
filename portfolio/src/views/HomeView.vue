@@ -31,7 +31,7 @@
   <section>
     <ContactView/>
   </section>
-  <footer class="footer mt-5">
+  <footer class="footer">
     <div class="container text-center">
       <p>CopyRight &copy; {{ cYear }} Masood Basardien</p>
     </div>

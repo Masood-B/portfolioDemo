@@ -128,7 +128,7 @@
           }
           .project{
             padding-top: 5rem;
-            background-image: url(https://i.ibb.co/h8YDfhd/wallpaperflare-com-wallpaper-3.jpg);
+            background-image: url(https://i.ibb.co/xXpGcGd/neon-city-retro-music-synthwave-1920x1080-wallpx-com.jpg);
             background-size:100vw 100vh;
             background-repeat:no-repeat;
             background-position: center center;

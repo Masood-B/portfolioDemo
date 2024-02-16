@@ -17,6 +17,10 @@
           <div class="row">
             <div class="col-md-4 mx-auto scard" v-for="content in skillContent" :key="content.title" >
               <div class="card mb-3 skillcard" data-aos="flip-down">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 <img :src="content.picture" class="card-img-top" alt="{{ content.title }}">
                 <div class="card-body">
                   <h3 class="card-title">{{ content.title }}</h3>
@@ -91,13 +95,16 @@
       border: 2px solid black;
       background: rgb(71, 70, 67);
     }
+    .cardd p{
+      color: white;
+    }
   
   .cardd:nth-child(odd) {
-      box-shadow: 0.5vw 0.2vw 0.7vw;
+      box-shadow: 0.5vw 0.2vw 0.7vw rgba(133,29,170,255);
     }
   
     .cardd:nth-child(even) {
-      box-shadow: 0.5vw 0.2vw 0.7vw;
+      box-shadow: -0.5vw 0.2vw 0.7vw rgba(133,29,170,255);
       margin-left: auto;
     }
   
@@ -107,9 +114,7 @@
         flex-wrap: wrap;
       }
   
-      .cardd a,
-      .cardd p,
-      footer p {
+      .cardd p{
         font-size: small;
       }
   
@@ -136,9 +141,89 @@
 
     .skillcard{
       background:rgb(71, 70, 67);
+      position: relative;
+      box-shadow: 0 10px 10px rgb(232, 58, 214, 0.3);
+      overflow:hidden
     }
-    .skillcard img:nth-child(1){
-      animation-delay: 2s;
+    .skillcard span{
+      transition: 0.5;
+      opacity: 0;
+    }
+    .skillcard:hover span{
+      opacity: 100;
+    }
+    .skillcard span:nth-child(1){
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, transparent,rgb(220, 27, 216));
+      animation: animate1 2s linear infinite;
+    }
+    @keyframes animate1{
+      0%{
+        transform: translateX(-100%);
+      }
+      100%{
+        transform: translateX(100%);
+      }
+    }
+
+    .skillcard span:nth-child(2){
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent,rgb(220, 27, 216));
+      animation: animate2 2s linear infinite;
+      animation-delay: 1s;
+    }
+    @keyframes animate2{
+      0%{
+        transform: translateY(-100%);
+      }
+      100%{
+        transform: translateY(100%);
+      }
+    }
+
+    .skillcard span:nth-child(3){
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to left, transparent,rgb(220, 27, 216));
+      animation: animate3 2s linear infinite;
+    }
+    @keyframes animate3{
+      0%{
+        transform: translateX(100%);
+      }
+      100%{
+        transform: translateX(-100%);
+      }
+    }
+
+    .skillcard span:nth-child(4){
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(to top, transparent, rgb(220, 27, 216));
+      animation: animate4 2s linear infinite;
+      animation-delay: 1s;
+    }
+    @keyframes animate4{
+      0%{
+        transform: translateY(100%);
+      }
+      100%{
+        transform: translateY(-100%);
+      }
     }
     
     .scard{

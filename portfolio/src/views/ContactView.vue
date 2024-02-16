@@ -72,6 +72,11 @@
 <style>
 .contact{
   padding-top: 5rem;
+  background-image: url(https://i.ibb.co/h8YDfhd/wallpaperflare-com-wallpaper-3.jpg);
+  background-size:100vw 100vh;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }  
 h2{
   padding-bottom: 2rem;
