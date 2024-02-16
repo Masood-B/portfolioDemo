@@ -150,5 +150,8 @@
           .col-md-4{
             width: 21rem;
           }
+          .card-body{
+           color: rgb(244, 245, 247) ;
+          }
           </style>
           

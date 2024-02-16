@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 .headingabout {
-  color: rgb(118, 122, 126) !important; 
+  color: rgb(244, 245, 247) !important; 
 }
 
 .about {
@@ -85,10 +85,11 @@ section{
   margin-bottom: 0.5rem;
   border-radius: 4rem;
   box-shadow: inset -3px -3px 3px purple;
+  background: rgba(14, 14, 14, 0.292);
 }
 section p{
     padding: 1rem;
-    color:rgb(199, 191, 209);
+    color:rgb(250, 248, 252);
     font-size: 1.1rem;
 }
 .contact-detail{

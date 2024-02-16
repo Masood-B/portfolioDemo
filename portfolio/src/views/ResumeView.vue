@@ -15,7 +15,7 @@
         <section >
           <h2 class="skill-top">Skills</h2>
           <div class="row">
-            <div class="col-md-4 mx-auto scard" v-for="content in skillContent" :key="content.title" >
+            <div class="scard" v-for="content in skillContent" :key="content.title" >
               <div class="card mb-3 skillcard" data-aos="flip-down">
                 <span></span>
                 <span></span>
@@ -69,13 +69,17 @@
             title: "JavaScript"
           },
           {
+            picture: "https://i.ibb.co/bvwh210/nodejs.png",
+            title: "Node JS"
+          },
+          {
             picture: "https://i.ibb.co/nR9jFbn/icons8-mysql-480.png",
             title: "Vue.js"
           },
           {
             picture: "https://i.ibb.co/ZTHTmPg/icons8-vue-js-480.png",
             title: "MySQL"
-          }
+          },
         ]
       };
     }
@@ -93,7 +97,9 @@
       padding: 2px;
       width: 50%;
       border: 2px solid black;
-      background: rgb(71, 70, 67);
+      background-image:  url(https://i.pinimg.com/564x/ec/8d/25/ec8d25482761bfde2357382a52b13f14.jpg) ;
+      background-size:50%;
+      background-position: center;
     }
     .cardd p{
       color: white;
@@ -228,6 +234,9 @@
     
     .scard{
       width:15rem
+    }
+    h3{
+      color: rgb(244, 245, 247);
     }
   </style>
   

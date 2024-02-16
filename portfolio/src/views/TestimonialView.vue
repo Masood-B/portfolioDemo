@@ -1,10 +1,10 @@
 <template>
   <div class="testimonial" id="testimonial">
-    <h2 class="text-center mb-4">Peer Review</h2>
+    <h2 class="text-center">Peer Review</h2>
     <div class="torso">
       <div class="container contain2">
-        <div class="contents-wraper" @mouseover="pause" @mouseout="autoSliding">
-          <section class="content-row">
+        <div class="contents-wraper" >
+          <section class="content-row" @mouseover="pause" @mouseout="autoSliding">
             <div v-for="(person, index) in people" :key="index" class="content-people" :class="{ active: index === activeIndex }">
               <img :src="person.image" >
               <h3>{{ person.name }}</h3>
@@ -35,22 +35,22 @@ export default {
         {
           name: 'Codi Kader',
           image: 'https://i.ibb.co/TB31Nmm/Codi-Kader-pfp.jpg',
-          review: 'His unwavering determination and passion make him a standout talent in the IT sector. Masood consistently meets deadlines with precision and excels both in collaborative team settings and when working independently. His adaptable nature ensures success in any work environment, and his warm and welcoming demeanor fosters a sense of inclusivity, making him a truly invaluable addition to any workplace or business.'
+          review: 'Masood\'s determination and passion set him apart in IT. He meets deadlines with precision, excels in teamwork and solo work, adapts easily, and fosters inclusivity. He\'s an invaluable addition to any workplace.'
         },
         {
           name: 'Uzukhanye Dywil',
           image: 'https://i.ibb.co/BzpNDmX/C11-Uzukhanye-Dywili-4.jpg',
-          review: 'I had the privilege of working with Masood Basardien, and it was a truly remarkable experience. His unwavering professionalism, meticulous attention to detail, and excellent communication skills ensured a seamless and highly productive collaboration. Masood consistently exceeded my expectations, consistently delivering exceptional results. I wholeheartedly endorse Masood Basardien for anyone in search of a talented and dedicated professional.'
+          review: 'Working with Masood Basardien was remarkable. His professionalism, attention to detail, and communication skills ensured seamless collaboration. He consistently exceeded expectations, delivering exceptional results. I wholeheartedly endorse him for anyone seeking a talented and dedicated professional.'
         },
         {
           name: 'Mujahid Fisher',
           image: 'https://i.ibb.co/x19FvdH/C12-C2-Mujahid-Fisher-3-11zon.jpg',
-          review: 'Masood demonstrates an exceptional ability to think independently, seeking assistance when necessary. His adeptness at connecting ideas, collaborative skills, and readiness to assist others make him a valuable addition to any organization or industry he chooses to engage with.'
+          review: 'Masood thinks independently and seeks help when needed. His ability to connect ideas, collaborate, and help others adds value to any company he joins.'
         },
         {
           name: 'Rabia Haucha',
           image: 'https://i.ibb.co/7t14RQT/LCA-Rabia-Haucha-Ju23-2.jpg',
-          review: 'Masood Basardien is an exceptionally positive and dependable individual. His proactive approach to work, unwavering commitment to fulfilling his responsibilities, and strong reliability make him a valuable asset in any team. Masood\'s friendly disposition and effectiveness in group dynamics ensure a smooth collaborative experience. It was a pleasure working with him, and I wholeheartedly recommend his professional services.'
+          review: 'Masood Basardien is positive and dependable. His proactive work approach, commitment, and reliability make him a valuable team member. Masood\'s friendliness and effectiveness in group settings ensure smooth collaboration. It was a pleasure working with him, and I wholeheartedly recommend his services.'
         },
         {
           name: 'Eighton Lee Paulse',
@@ -102,16 +102,17 @@ export default {
 }
 .torso{
 width:100%;
-
 display:flex;
 justify-content: center;
 align-items: center;
+padding-bottom:2rem;
+padding-inline: 0.4rem;
 }
 .contain2{
   position: relative;
-  width: 100% !important;
-  min-height: 450px;
-  background:rgba(128, 128, 128, 0.471);
+  width: 100%;
+  min-height: 450px;    
+  padding-bottom: 1.5rem;
 }
 .contain2 .contents-wraper{
   width: 80%;
@@ -152,7 +153,8 @@ align-items: center;
 .content-row .content-people h3{
   font-size:30px;
   font-style: italic;
-  padding: 7px;
+  padding: 5px;
+  color: white;
 }
 .content-row .content-people p{
   font-size: 18px;
@@ -221,6 +223,10 @@ align-items: center;
   .contain2 .contents-wraper{
     width:90%;
   }
+  .content-row .content-people img{
+    width: 150px;
+    height: 150px;
+  }
   .content-row .content-people h3{
     font-size: 26px;
   }
@@ -230,4 +236,10 @@ letter-spacing: initial;
 line-height: initial;
   }
 }
+@media(max-width: 371px){
+  .content-row .content-people p{
+    font-size:14.8px;
+  }
+}
+
 </style>
