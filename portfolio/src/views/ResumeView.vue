@@ -14,7 +14,7 @@
   
         <section >
           <h2 class="skill-top">Skills</h2>
-          <div class="row">
+          <div class="row centercard">
             <div class="scard" v-for="content in skillContent" :key="content.title" >
               <div class="card mb-3 skillcard" data-aos="flip-down">
                 <span></span>
@@ -69,7 +69,7 @@
             title: "JavaScript"
           },
           {
-            picture: "https://i.ibb.co/bvwh210/nodejs.png",
+            picture: "https://i.ibb.co/THPcVy5/nodejso.png",
             title: "Node JS"
           },
           {
@@ -101,7 +101,7 @@
       background-size:50%;
       background-position: center;
     }
-    .cardd p{
+    .cardd p, h4{
       color: white;
     }
   
@@ -140,6 +140,7 @@
     }
     h2{
       padding-bottom: 2rem;
+      color:white !important;
     }
     .skill-top{
       padding-top: 2rem;
@@ -233,7 +234,16 @@
     }
     
     .scard{
-      width:15rem
+      width:15rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .centercard{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     h3{
       color: rgb(244, 245, 247);

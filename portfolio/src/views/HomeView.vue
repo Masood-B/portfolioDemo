@@ -66,6 +66,10 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100vh; 
+  padding: 2rem;
+}
+h2{
+  color: white !important;
 }
 
 .aboutButton {
@@ -95,7 +99,7 @@ a .aboutButton:hover{
 }
 
 .aboutButton:hover {
-  box-shadow: rgba(1, 242, 247, 0.456) 0 -25px 18px -14px inset,rgba(1, 242, 247, 0.456) 0 1px 2px,rgba(1, 242, 247, 0.456) 0 2px 4px,rgba(1, 242, 247, 0.456) 0 4px 8px,rgba(1, 242, 247, 0.456) 0 8px 16px,rgba(1, 242, 247, 0.456) 0 16px 32px;
+  box-shadow: rgba(136, 1, 247, 0.456) 0 -25px 18px -14px inset,rgba(1, 242, 247, 0.456) 0 1px 2px,rgba(1, 242, 247, 0.456) 0 2px 4px,rgba(1, 242, 247, 0.456) 0 4px 8px,rgba(1, 242, 247, 0.456) 0 8px 16px,rgba(1, 242, 247, 0.456) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
   background-color: rgba(17, 214, 201, 0.725);
 }
@@ -127,10 +131,10 @@ a .aboutButton:hover{
 
 .image-overlay {
   position: absolute;
-  top: 20%;
+  top: 13%;
   right: 5%;
-  width: 90%;
-  height: 80%;
+  width: 100%;
+  height: 90%;
   background-color: #2d3d64b9;
   z-index: 0; 
   transform: skewY(-5deg);

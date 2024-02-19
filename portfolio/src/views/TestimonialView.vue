@@ -19,6 +19,7 @@
               class="dot"
               :class="{ active: index === activeIndex }"
               @click="switchTest(index)"
+              @mouseover="pause"
             ></div>
           </section>
         </div>
@@ -107,12 +108,14 @@ justify-content: center;
 align-items: center;
 padding-bottom:2rem;
 padding-inline: 0.4rem;
+
 }
 .contain2{
   position: relative;
   width: 100%;
   min-height: 450px;    
   padding-bottom: 1.5rem;
+  box-shadow: 0 0 0 2px #68e8ff, 8px 8px 0 0 #68e8ff;
 }
 .contain2 .contents-wraper{
   width: 80%;
@@ -184,8 +187,8 @@ padding-inline: 0.4rem;
 }
 
 .contents-wraper .indicators .active{
-  background-color: indigo;
-  box-shadow: 1px 0px 10px 1px rgb(15, 0, 128);
+  background-color: #68e8ff;
+  box-shadow: 1px 0px 10px 1px #68e8ff;
 }
 @keyframes next1{
   from{

@@ -81,7 +81,15 @@
 h2{
   padding-bottom: 2rem;
 }     
-
-
-
+label{
+  color: white;
+}
+input, textarea{
+  background: grey !important;
+  color:white !important;
+  border: black solid 1px !important;
+}
+::placeholder{
+  color: white !important;
+}
 </style>  

@@ -7,14 +7,14 @@
         data-aos-duration="1000">
           <div class="card mb-3">
             <div class="card-img-container">
-              <img :src="content.picture" class="card-img" alt="{{ content.title }}">
+              <img :src="content.picture" class="card-img" :alt="content.title">
               <div class="overlay">
-                <button>Code</button>
-                <button>Live</button>
+                <a :href="content.code" target="_blank"><button>Code</button></a>
+                <a :href="content.live" target="_blank"><button>Live</button></a>
               </div>
             </div>
             <div class="card-body">
-              <h5 class="card-title">{{ content.title }}</h5>
+              <h5 class="card-title">{{ content.title }}</h5> 
             </div>
           </div>
         </div>
@@ -29,28 +29,40 @@
               return {
                 projectContent: [
                   {
-                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
-                    title: "1",
+                    picture: "https://wallpapercave.com/wp/wp2497495.jpg",
+                    title: "Simple Calculator",
+                    code:"https://github.com/Masood-B/calculatorProject",
+                    live:"https://idyllic-sfogliatella-dc6519.netlify.app/"
                   },
                   {
-                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
-                    title: "2",
+                    picture: "https://cdn1.byjus.com/wp-content/uploads/2019/03/relation-between-celsius-and-fahrenheit.png",
+                    title: "Temperature",
+                    code:"https://github.com/Masood-B/temperatureProject",
+                    live:"https://phenomenal-dasik-09db32.netlify.app/"
                   },
                   {
-                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
-                    title: "3",
+                    picture: "https://i.ibb.co/dDQWMyP/Screenshot-2024-02-19-111123.png",
+                    title: "Old Portfolio",
+                    code:"https://github.com/Masood-B/vuePortfolioProject",
+                    live:"https://vue-portfolio-61517.firebaseapp.com/"
                   },
                   {
-                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
-                    title: "4",
+                    picture: "https://t3.ftcdn.net/jpg/02/23/57/42/360_F_223574261_LmzlzkLtjR0cxcDNvkmr2xHfMU69CheO.jpg",
+                    title: "BMI Calculator",
+                    code:"https://github.com/Masood-B/CalculatorBMIproject",
+                    live:"https://luxury-melba-07ed58.netlify.app/"
                   },
                   {
-                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
-                    title: "5",
+                    picture: "https://capstonewriting.com/wp-content/uploads/2020/08/blog_img2-1200x900.jpg",
+                    title: "CapStone",
+                    code:"https://github.com/Masood-B/capstoneProject/tree/main",
+                    live:"https://capstoneeomp.web.app/"
                   },
                   {
-                    picture: "https://i.pinimg.com/564x/72/62/7c/72627cbe125003ce7cedf877e1d7766e.jpg",
-                    title: "6",
+                    picture: "https://w0.peakpx.com/wallpaper/299/166/HD-wallpaper-nothing-abstract-black.jpg",
+                    title: "?",
+                    code:"#",
+                    live:"#"
                   },
                 ],
               };
@@ -67,6 +79,10 @@
           .card-img {
             transition: transform 0.5s;
             transition: filter 0.5s;
+          }
+
+          img{
+            height: 15rem;
           }
           
           .overlay {
