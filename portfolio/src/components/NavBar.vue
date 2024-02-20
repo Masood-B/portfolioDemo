@@ -28,7 +28,7 @@
                 <a class="nav-link" href="#project">Project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonial">Testimonial</a>
+                <a class="nav-link" href="#testimonial">Peer Review</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
