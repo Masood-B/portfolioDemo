@@ -29,6 +29,17 @@
             </div>
           </div>
         </section>
+
+        <section>
+          <h2>Certificate/Badge</h2>
+          <div class="row centercard">
+            <div class="scard" v-for="content in badgeContent" :key="content.title" >
+              <div class="mb-3" data-aos="flip-down">
+                <a :href="content.site" target="_blank"><img :src="content.picture" class="card-img-top" alt="{{ content.title }}"></a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </template>
@@ -84,7 +95,29 @@
             picture: "https://i.ibb.co/R3rFFJ4/rest-api-blue-logo-22098.png",
             title: "REST API"
           },
-        ]
+        ],badgeContent:[{
+          picture:"https://images.credly.com/size/220x220/images/dcdf1a3c-2594-4f4c-a33a-050b4bca58b5/image.png",
+          site:"https://www.credly.com/badges/62023fb5-846a-4b85-aaea-b172437544f8/public_url"
+        },{
+          picture:"https://images.credly.com/size/220x220/images/8d67bbf4-128b-4141-b5f1-1bc61bbfbaa6/image.png",
+          site:"https://www.credly.com/badges/a4c81273-1ac7-45f4-975f-8f558dfeff3b/public_url"
+        },{
+          picture:"https://images.credly.com/size/220x220/images/5bdd6a39-3e03-4444-9510-ecff80c9ce79/image.png",
+          site:"https://www.credly.com/badges/cc5dcd92-e992-4c3b-8c54-1c639dea657a/public_url"
+        },{
+          picture:"https://images.credly.com/size/220x220/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+          site:"https://www.credly.com/badges/395426c7-c70a-4044-8168-83e6d727f8bc/public_url"
+        },{
+          picture:"https://images.credly.com/size/220x220/images/978f88dc-c247-4093-9d39-6efac3651297/image.png",
+          site:"https://www.credly.com/badges/eaceecdd-a73f-4a9a-bc99-ebb0d991f755/public_url"
+        },{
+          picture:"https://images.credly.com/size/220x220/images/441578ec-c0f3-46cc-95fc-86b27e90cf4f/image.png",
+          site:"https://www.credly.com/badges/94f99893-7a05-4d9a-8cdc-bc4b092a7b23/public_url"
+        },{
+          picture:"https://images.credly.com/size/220x220/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png",
+          site:"https://www.credly.com/badges/a0eaeab6-ca0f-4475-bf97-6037565ec26b/public_url"
+        }
+      ]
       };
     }
   };
