@@ -76,6 +76,7 @@ export default {
 </script>
 
 <style>
+
 .content {
   display: flex;
   justify-content: center;
