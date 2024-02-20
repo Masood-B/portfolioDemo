@@ -52,10 +52,10 @@ export default {
     background-color: rgba(0, 0, 0, 0.148);
 }
 .nav-link{
-  color: white;
+  color: white !important;
 }
 .nav-link:hover{
-  color: brown
+  color: rgb(207, 36, 207) !important
 }
 
 </style>

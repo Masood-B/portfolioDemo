@@ -4,7 +4,7 @@
       <div class="row">
         <h2 class="headingabout">About Me</h2>
         <div class="col-md-6 aboutsec">
-          <section data-aos="fade-right">
+          <section data-aos="fade-up">
             <p>
               I am a 22-year-old individual residing in Mitchell's Plain, having
               attended Meadowridge Primary School and Spine Road High School
@@ -28,7 +28,7 @@
           </section>
         </div>
         <div class="col-md-6 aboutsec2 my-auto">
-          <section data-aos="fade-left">
+          <section data-aos="fade-up">
             <div class="contact-detail">
               <p class="contact-detail">
                 <strong>Full Name: Masood Basardien</strong>
@@ -94,5 +94,8 @@ section p{
 }
 .contact-detail{
   word-break: break-word;
+}
+@media(max-width:767){
+  
 }
 </style>

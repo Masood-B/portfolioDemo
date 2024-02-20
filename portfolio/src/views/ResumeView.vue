@@ -80,6 +80,10 @@
             picture: "https://i.ibb.co/ZTHTmPg/icons8-vue-js-480.png",
             title: "MySQL"
           },
+          {
+            picture: "https://i.ibb.co/R3rFFJ4/rest-api-blue-logo-22098.png",
+            title: "REST API"
+          },
         ]
       };
     }

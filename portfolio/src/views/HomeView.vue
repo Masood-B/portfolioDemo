@@ -1,7 +1,9 @@
 <template>  
   <div class="home" id="home">
     <div class="content">
-      <div class="image-container">
+      <div class="image-container" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <img class="self-pic" alt="myself" src="https://i.ibb.co/fGSzy6h/frontimage-1-removebg.png"  border="0" loading="lazy" />
         <div class="image-overlay"></div>
       </div>
@@ -11,7 +13,16 @@
         <h2>Hello, I'm Masood Basardien</h2>
         <h2>An Aspiring Full-stack Web Developer</h2>
         <div>
-          <a href="#about"><button class="aboutButton">About Me</button></a>
+          <div class="row">
+            <div class="col">
+              <a href="#about" class="buttonSpace"><button class="aboutButton ">About Me</button></a>
+            </div>
+            <div class="col">
+              <a href="https://drive.google.com/uc?export=download&id=14B1qIhlgxMVWWFv48N3U8mrcjVZDmMdE" class="buttonSpace"><button class="aboutButton">CV <i class="bi bi-file-earmark-arrow-down"></i></button></a>
+            </div>
+          </div>
+          
+   
         </div>
       </div>
     </div>
@@ -32,8 +43,12 @@
     <ContactView/>
   </section>
   <footer class="footer">
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/masood-basardien-6aa759282/" target="_blank" class="media-icon"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Masood-B?tab=repositories" target="_blank" class="media-icon"><i class="bi bi-github"></i></a>
+    </div>
     <div class="container text-center">
-      <p>CopyRight &copy; {{ cYear }} Masood Basardien</p>
+      <p class="copy-right">CopyRight &copy; {{ cYear }} Masood Basardien</p>
     </div>
   </footer>
 </template>
@@ -71,7 +86,10 @@ export default {
 h2{
   color: white !important;
 }
-
+.buttonSpace{
+padding: 1rem;
+margin-top: 1rem;
+}
 .aboutButton {
   background-color: #a5aaf9;
   border-radius: 100px;
@@ -126,6 +144,7 @@ a .aboutButton:hover{
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 10rem;
 }
 
 
@@ -135,7 +154,7 @@ a .aboutButton:hover{
   right: 5%;
   width: 100%;
   height: 90%;
-  background-color: #2d3d64b9;
+  background-color: rgb(94, 30, 116);
   z-index: 0; 
   transform: skewY(-5deg);
 }
@@ -171,9 +190,23 @@ a .aboutButton:hover{
 
 .footer {
   background-color: #242b33;
-  padding: 5px 0;
+ 
   bottom: 0;
   width: 100%;
 }
-
+.text-center{
+color: white;
+}
+.copy-right{
+  margin-bottom: 0;
+}
+.media-icon{
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 380px){
+  .buttonSpace{
+    padding: 0rem;
+    }
+}
 </style>

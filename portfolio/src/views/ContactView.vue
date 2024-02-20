@@ -1,8 +1,8 @@
 <template>
     <div class="contact" id="contact">
         <div class="container">
+          <h2>Contact Us</h2>
         <div class="row">
-              <h2>Contact Us</h2>
             <div class="col">
               <form
                 action="https://formspree.io/f/xbjewvba"
@@ -54,7 +54,7 @@
                   ></textarea>
                 </div>
                 <div class="mb-3">
-                  <button class="btn btn-primary">Submit</button>
+                  <button class="button" role="button"><span class="text">Press</span><span>Submit</span></button>
                 </div>
               </form>
             </div>
@@ -68,7 +68,7 @@
 
           };
           </script>
-          
+         
 <style>
 .contact{
   padding-top: 5rem;
@@ -77,6 +77,9 @@
   background-repeat:no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  display:flex;
+justify-content: center;
+align-items: center;
 }  
 h2{
   padding-bottom: 2rem;
@@ -85,11 +88,72 @@ label{
   color: white;
 }
 input, textarea{
-  background: grey !important;
+  background: rgba(9, 0, 0, 0.447) !important;
   color:white !important;
-  border: black solid 1px !important;
+  border: rgb(10, 163, 234) solid 1px !important;
+  border-radius: 1rem !important;
+  
 }
 ::placeholder{
   color: white !important;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(10, 163, 234);
+  color: #f6f6f9;
+  display: inline-block;
+  padding: 10px 15px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  background: rgba(9, 0, 0, 0.73);
+}
+
+.button span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 65.5%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(60, 190, 250);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 </style>  

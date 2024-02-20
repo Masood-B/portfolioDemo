@@ -57,13 +57,7 @@
                     title: "CapStone",
                     code:"https://github.com/Masood-B/capstoneProject/tree/main",
                     live:"https://capstoneeomp.web.app/"
-                  },
-                  {
-                    picture: "https://w0.peakpx.com/wallpaper/299/166/HD-wallpaper-nothing-abstract-black.jpg",
-                    title: "?",
-                    code:"#",
-                    live:"#"
-                  },
+                  }
                 ],
               };
             },

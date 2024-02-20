@@ -1,8 +1,9 @@
 <template>
   <div class="testimonial" id="testimonial">
-    <h2 class="text-center">Peer Review</h2>
     <div class="torso">
-      <div class="container contain2">
+      <div class="col">
+      <h2 class="text-center">Peer Review</h2>
+      <div class="container contain2" data-aos="zoom-in">
         <div class="contents-wraper" >
           <section class="content-row" @mouseover="pause" @mouseout="autoSliding">
             <div v-for="(person, index) in people" :key="index" class="content-people" :class="{ active: index === activeIndex }">
@@ -25,6 +26,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -100,6 +102,9 @@ export default {
 
 .testimonial{
   padding-top: 5rem;
+  display:flex;
+justify-content: center;
+align-items: center;
 }
 .torso{
 width:100%;
@@ -222,6 +227,9 @@ padding-inline: 0.4rem;
     Left: 0%;
   }
 }
+
+
+
 @media(max-width: 550px){
   .contain2 .contents-wraper{
     width:90%;
