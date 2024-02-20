@@ -54,7 +54,7 @@
                   },
                   {
                     picture: "https://capstonewriting.com/wp-content/uploads/2020/08/blog_img2-1200x900.jpg",
-                    title: "CapStone",
+                    title: "Capstone",
                     code:"https://github.com/Masood-B/capstoneProject/tree/main",
                     live:"https://capstoneeomp.web.app/"
                   }
