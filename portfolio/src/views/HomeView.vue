@@ -162,11 +162,13 @@ a .aboutButton:hover{
 
 @media (max-width: 768px) {
   .self-pic {
-    display: none !important;
+    padding-bottom:2rem ;
   }
 
   .image-overlay {
-    display: none ;
+    top: 11%;
+    right: 1%;
+    height: 80%;
   }
 }
 
@@ -209,5 +211,17 @@ color: white;
   .buttonSpace{
     padding: 0rem;
     }
+}
+
+@media (max-width: 321px){
+  .self-pic {
+    width:100%;
+  }
+
+  .image-overlay {
+    top:20%;
+    right: 1%;
+    height: 70%;
+  }
 }
 </style>
