@@ -120,6 +120,9 @@
         },{
           picture:"https://images.credly.com/size/220x220/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png",
           site:"https://www.credly.com/badges/a0eaeab6-ca0f-4475-bf97-6037565ec26b/public_url"
+        },{
+          picture:"https://i.ibb.co/zNjBrLz/1709644614346-66b8310b-2175-4071-98f5-d7530a0d42eb-1.jpg",
+          site:"https://i.ibb.co/zNjBrLz/1709644614346-66b8310b-2175-4071-98f5-d7530a0d42eb-1.jpg"
         }
       ]
       };
