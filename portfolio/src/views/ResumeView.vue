@@ -101,7 +101,7 @@
           },
           {
             picture: "https://i.ibb.co/JrDBjXB/Mongodb.png",
-            title: "Mongodb"
+            title: "MongoDB"
           },
         ],badgeContent:[{
           picture:"https://images.credly.com/size/220x220/images/dcdf1a3c-2594-4f4c-a33a-050b4bca58b5/image.png",
