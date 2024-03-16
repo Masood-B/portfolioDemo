@@ -99,6 +99,10 @@
             picture: "https://i.ibb.co/3BWJ47r/wordpress.png",
             title: "WordPress"
           },
+          {
+            picture: "https://i.ibb.co/JrDBjXB/Mongodb.png",
+            title: "Mongodb"
+          },
         ],badgeContent:[{
           picture:"https://images.credly.com/size/220x220/images/dcdf1a3c-2594-4f4c-a33a-050b4bca58b5/image.png",
           site:"https://www.credly.com/badges/62023fb5-846a-4b85-aaea-b172437544f8/public_url"
