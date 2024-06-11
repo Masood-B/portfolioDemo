@@ -103,6 +103,10 @@
             picture: "https://i.ibb.co/JrDBjXB/Mongodb.png",
             title: "MongoDB"
           },
+          {
+            picture: "https://i.ibb.co/HY2xbYL/icons8-java.png",
+            title: "Java"
+          },
         ],badgeContent:[{
           picture:"https://images.credly.com/size/220x220/images/dcdf1a3c-2594-4f4c-a33a-050b4bca58b5/image.png",
           site:"https://www.credly.com/badges/62023fb5-846a-4b85-aaea-b172437544f8/public_url"
@@ -127,6 +131,9 @@
         },{
           picture:"https://i.ibb.co/zNjBrLz/1709644614346-66b8310b-2175-4071-98f5-d7530a0d42eb-1.jpg",
           site:"https://i.ibb.co/zNjBrLz/1709644614346-66b8310b-2175-4071-98f5-d7530a0d42eb-1.jpg"
+        },{
+          picture:"https://i.ibb.co/tqV77GY/Life-Choice-Academy-Certificate.jpg",
+          site:"https://i.ibb.co/tqV77GY/Life-Choice-Academy-Certificate.jpg"
         }
       ]
       };
