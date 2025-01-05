@@ -18,7 +18,7 @@
               <a href="#about" class="buttonSpace"><button class="aboutButton ">About Me</button></a>
             </div>
             <div class="col">
-              <a href="https://drive.google.com/uc?export=download&id=14B1qIhlgxMVWWFv48N3U8mrcjVZDmMdE" class="buttonSpace"><button class="aboutButton">CV <i class="bi bi-file-earmark-arrow-down"></i></button></a>
+              <a href="https://drive.google.com/uc?export=download&id=1Bjxh9stcM6KbMDhn5e8xZWc8-563tFQh" class="buttonSpace"><button class="aboutButton">CV <i class="bi bi-file-earmark-arrow-down"></i></button></a>
             </div>
           </div>
           
